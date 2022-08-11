@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap");
+
+/* Basic & General Styling */
+html,
+body {
+  font-family: poppins;
+  font-size: 15px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  margin: 0;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+}
+a {
+  text-decoration: none;
+  font-weight: 500;
+  /* Color Transition */
+  color: rgba(34, 54, 69, 0.7) !important;
+  transition: color 0.25s linear !important;
+}
+
+a:hover {
+  color: #e74c3c !important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Targeted Styling */
+.navbar {
+  background-color: #2a3d45;
+  padding: 1rem 2rem;
+  height: 0rem;
+  min-height: 12vh;
+}
+
+/* Logo */
+.navbar > .navbar-brand > a {
+  padding: 1rem 0;
+  display: block;
+  text-decoration: none;
+}
+.navbar-brand {
+  font-family: oswald;
+  font-size: 2.5rem;
+  color: #e74c3c !important;
+}
+
+/* Hamburger Icon */
+.navbar-toggler {
+  background-color: #e74c3c;
+  border: none;
+  padding: 10px 6px;
+  outline: none;
+}
+.navbar-toggler > span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border: 1px;
+  background-color: #ebebeb;
+}
+.navbar-toggler > span + span {
+  margin-top: 4px;
+  width: 18px;
+  margin-left: 4px;
+}
+.navbar-toggler > span + span + span {
+  width: 10px;
+  margin-left: 10px;
+}
+
+/* Navbar Links */
+.nav-link {
+  padding: 2rem 1.4rem;
+  font-size: 1.1rem;
+  position: relative;
+  color: #ebebeb !important;
+  transition: color 0.25s linear;
+}
+/* Navbar Link On Hover */
+.nav-link:hover {
+  color: #e74c3c;
+  border-top: 2px solid #e74c3c;
+  padding: 1.8rem 1.2rem;
+}
+/* Navbar Link: Active */
+.active {
+  padding: 1.8rem 1.2rem;
+  border-top: 2px solid #e74c3c !important;
+  color: #e74c3c !important;
+}
+
+/* Navbar Icons */
+.nav-icons {
+  padding: 2rem 1.4rem;
+  position: relative;
+  font-size: 25px;
+  color: #ebebeb;
+  transition: color 0.25s linear;
+}
+/* Navbar Icons Transitions */
+.nav-icons:hover {
+  border-top: 2px solid #e74c3c;
+  padding: 1.8rem 1.4rem;
+  color: #e74c3c;
+}
+/* responsive styling */
+@media only screen and (max-width: 991px) {
+  .navbar_responsive{
+    background: #2a3d45;
+    padding: 0rem 2rem;
+  }
+}
