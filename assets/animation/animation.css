@@ -13,5 +13,5 @@
 }
 .animation_nav {
     cursor: pointer;
-    animation: movedown 1.5s linear ;
+    animation: movedown 1s linear ;
 }

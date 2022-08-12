@@ -1,0 +1,111 @@
+/*----------footer--------*/
+footer {
+    background: #2a3d45;
+    color: white;
+  }
+  
+  footer .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  
+  footer .item {
+    margin-top: 50px;
+  }
+  
+  footer .app {
+    background: rgba(3, 1, 1, 0.2);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  footer h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  footer li {
+    margin-bottom: 20px;
+    opacity: 0.5;
+  }
+  
+  footer .icon i {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  /*----------footer--------*/
+  @media only screen and (max-width:768px) {
+  
+    /*----------home_product--------*/
+    .left,
+    .right {
+      width: 100%;
+    }
+  
+    .left_one {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  
+    .right_one {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .home_product .box {
+      margin-top: 50px;
+    }
+  
+    .trending .content,
+    .offer .container,
+    .home_product .container {
+      flex-direction: column;
+    }
+  
+    /*----------home_product--------*/
+    /*----------deal--------*/
+    .owl-carousel3 .owl-prev i {
+      left: 83%;
+    }
+  
+    .deal .box {
+      flex-direction: column;
+    }
+  
+    .deal .left,
+    .deal .right {
+      width: 100%;
+    }
+  
+    /*----------deal--------*/
+    /*----------trending--------*/
+    .trending .right_one {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    /*----------trending--------*/
+    /*----------shipping--------*/
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    /*----------shipping--------*/
+    /*----------newsletter--------*/
+    .newsletter .container {
+      max-width: 80%;
+    }
+  
+    /*----------newsletter--------*/
+    /*----------footer--------*/
+    footer .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    /*----------footer--------*/
+  }
+  .icon-flex{
+    padding-left: 40px;
+    font-size: 25px;
+  }

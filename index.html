@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thrift Fashion Store</title>
-    
     <!-- Bootstrap CSS Link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -13,41 +12,47 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-   <!-- Aos Animation Link -->
-   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- animation Link -->
-    <link rel="stylesheet" href="./assets/animation/animation.css" />
+    <link rel="stylesheet" href="./assets/animation/animation.css">
     <!-- Navbar CSS Link -->
     <link rel="stylesheet" href="./assets/CSS/navbar.css" />
-    <!-- Home CSS Link -->
+    <!-- Hero CSS Link -->
     <link rel="stylesheet" href="./assets/CSS/hero.css" />
+    <!-- About CSS Link -->
+    <link rel="stylesheet" href="./assets/CSS/about.css">
+    <!-- Product CSS link -->
+    <link rel="stylesheet" href="./assets/CSS/product.css">
+    
+   
     <!-- Product Slider CSS Link -->
     <link rel="stylesheet" href="./assets/CSS/product-slider.css">
-    <!-- About us css link -->
-    <link rel="stylesheet" href="./assets/CSS/about.css">
+
     <!-- Contact us css link -->
     <link rel="stylesheet" href="./assets/CSS/contact.css">
-     <!-- owl carousel CSS link -->
-     <link rel = "stylesheet" href = "./assets/owl_carousel/owl.carousel.css">
-     <link rel = "stylesheet" href = "./assets//owl_carousel/owl.theme.default.css">
+
      <!-- Font Awesome 5.0 Link -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Google Fonts: Poppins & Oswald -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap"
-      rel="stylesheet"
-    />
     <!-- Font Awesome Kit JS Link -->
     <script
       src="https://kit.fontawesome.com/9e68e86282.js"
       crossorigin="anonymous"
     >
     </script>
-    <!-- Json data Js  -->
-    <script type = "text/javascript" src="./assets/js/myjson.js"></script>
+  <!-- OwlCarouse css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+   <!-- jquery   -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+
+    <!-- Footer CSS Link -->
+    <link rel="stylesheet" href="./assets/CSS/footer.css">
+    	  <!-- OwlCarouse js -->
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+	  <!-- OwlCarouse js -->
   </head>
   <body>
-
     <!-- Navbar Starts -->
     <header class="header">
       <nav class="navbar navbar-expand-lg navbar-nav fixed-top animate_logo"  id="navbar">
@@ -72,30 +77,16 @@
           >
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 animation_nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Products
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" id="link" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                </ul>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#products"> Products </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Feedback</a>
@@ -117,146 +108,231 @@
             </ul>
           </div>
         </div>
+        <button
+        type="button"
+        class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo01"
+      >
+        <i class="bi bi-search"></i>
+      </button>
       </nav>
     </header>
     <!-- Navbar Ends -->
-
+    
+   
     <!-- Main Body Starts -->
 
     
             
     <!--Hero Starts -->
-    <div class="container_hero">
+    <div class="container_hero" id="home">
         <div class="text-box">
             <p>I'M</p>
-            <h1>Fashion Thrift</h1>
-            <h3>Start Shopping Here</h3>    
+            <h1>THRIFT FASHION</h1>
+            <h3>Start Shopping Here</h3>  <a href="#product">
+                <Button type="btn btn-primary">Go to Products</Button>  
+            </a>
         </div>
-        
+      
     </div>
     <!-- Hero Ends Here -->
 
+  <!-- Products Section Start -->
+  <section class="section-products" id="product">
+    <div class="container">
+            <div class="row justify-content-center text-center">
+                    <div class="col-md-8 col-lg-6">
+                            <div class="header">
+                                    <h3>Featured Product</h3>
+                                    <h2>Popular Products</h2>
+                            </div>
+                    </div>
+            </div>
+            <div class="row">
+                    <!-- Single Product -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div id="product-1" class="single-product">
+                                    <div class="part-1">
+                                            <ul>
+                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                                            </ul>
+                                    </div>
+                                    <div class="part-2">
+                                            <h3 class="product-title" id="productName">Here Product Title</h3>
+                                            <h4 class="product-old-price">$79.99</h4>
+                                            <h4 class="product-price">$49.99</h4>
+                                    </div>
+                            </div>
+                    </div>
+                    <!-- Single Product -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div id="product-2" class="single-product">
+                                    <div class="part-1">
+                                            <span class="discount">15% off</span>
+                                            <ul>
+                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                                            </ul>
+                                    </div>
+                                    <div class="part-2">
+                                            <h3 class="product-title">Here Product Title</h3>
+                                            <h4 class="product-price">$49.99</h4>
+                                    </div>
+                            </div>
+                    </div>
+                    <!-- Single Product -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div id="product-3" class="single-product">
+                                    <div class="part-1">
+                                            <ul>
+                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                                            </ul>
+                                    </div>
+                                    <div class="part-2">
+                                            <h3 class="product-title">Here Product Title</h3>
+                                            <h4 class="product-old-price">$79.99</h4>
+                                            <h4 class="product-price">$49.99</h4>
+                                    </div>
+                            </div>
+                    </div>
+                    <!-- Single Product -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div id="product-4" class="single-product">
+                                    <div class="part-1">
+                                            <span class="new">new</span>
+                                            <ul>
+                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                                            </ul>
+                                    </div>
+                                    <div class="part-2">
+                                            <h3 class="product-title">Here Product Title</h3>
+                                            <h4 class="product-price">$49.99</h4>
+                                    </div>
+                            </div>
+                    </div>
+                    <!-- Single Product -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div id="product-1" class="single-product">
+                                    <div class="part-1">
+                                            <ul>
+                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                                            </ul>
+                                    </div>
+                                    <div class="part-2">
+                                            <h3 class="product-title">Here Product Title</h3>
+                                            <h4 class="product-old-price">$79.99</h4>
+                                            <h4 class="product-price">$49.99</h4>
+                                    </div>
+                            </div>
+                    </div>
+                    <!-- Single Product -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div id="product-2" class="single-product">
+                                    <div class="part-1">
+                                            <span class="discount">15% off</span>
+                                            <ul>
+                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                                            </ul>
+                                    </div>
+                                    <div class="part-2">
+                                            <h3 class="product-title">Here Product Title</h3>
+                                            <h4 class="product-price">$49.99</h4>
+                                    </div>
+                            </div>
+                    </div>
+                    <!-- Single Product -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div id="product-3" class="single-product">
+                                    <div class="part-1">
+                                            <ul>
+                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                                            </ul>
+                                    </div>
+                                    <div class="part-2">
+                                            <h3 class="product-title">Here Product Title</h3>
+                                            <h4 class="product-old-price">$79.99</h4>
+                                            <h4 class="product-price">$49.99</h4>
+                                    </div>
+                            </div>
+                    </div>
+                    <!-- Single Product -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div id="product-4" class="single-product">
+                                    <div class="part-1">
+                                            <span class="new">new</span>
+                                            <ul>
+                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                                                    <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                                            </ul>
+                                    </div>
+                                    <div class="part-2">
+                                            <h3 class="product-title">Here Product Title</h3>
+                                            <h4 class="product-price">$49.99</h4>
+                                    </div>
+                            </div>
+                    </div>
+            </div>
     </div>
-
-      <div class="row my-5">
-        <!-- Featured Product starts here-->
-        <div class="text-center product_heading">Featured Products</div>
-        <a href="" class="fw-light w-75 mx-auto text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sequi!</a>
-      </div>
-      <div class = "row g-4 my-5 mx-auto owl-carousel owl-theme json-card">
-<!-- Product Starts -->
-        <div class = "col product-item mx-auto">
-            <div class = "product-img">
-                <img src = "" alt = "" class = "img-fluid json-img d-block mx-auto">
-                <span class = "heart-icon">
-                    <i class = "far fa-heart"></i>
-                </span>
-                <div class = "row btns w-100 mx-auto text-center">
-                    <button type = "button" class = "col-6 py-2">
-                        <i class = "fa fa-cart-plus"></i> Add to Cart
-                    </button>
-                    <button type = "button" class = "col-6 py-2">
-                        <i class = "fa fa-binoculars"></i> View
-                    </button>
-                </div>
-            </div>
-            <div class="product-data"></div>
-
-            <div class = "product-info p-3">
-                <span class = "product-type">Electronics & Accessories</span>
-                <a href = "#" class = "d-block text-dark text-decoration-none py-2 product-name " id="json-name"></a>
-                <span class = "product-price">$ 100.50</span>
-                <div class = "rating d-flex mt-1">
-                    <span>
-                        <i class = "fa fa-star"></i>
-                    </span>
-                    <span>
-                        <i class = "fa fa-star"></i>
-                    </span>
-                    <span>
-                        <i class = "fa fa-star"></i>
-                    </span>
-                    <span>
-                        <i class = "fa fa-star"></i>
-                    </span>
-                    <span>
-                        <i class = "fa fa-star"></i>
-                    </span>
-                    <span>(25 reviews)</span>
-                </div>
-            </div>
-        </div>
-    <!-- Product Ends -->
-        </div>
-
-    <!-- Featured Product Ends here-->
-
-    <!-- About Starts Here -->
-
-<!-- ======= About Section ======= -->
-<section class="section-about">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 section-t8 position-relative">
-        <div class="row">
-          <div class="col-sm-6 col-lg-5">
-            <img src="https://media.istockphoto.com/photos/track-and-mountains-in-valle-del-lago-somiedo-nature-park-asturias-picture-id1370772148?k=20&m=1370772148&s=612x612&w=0&h=UtId6HL27edD9i1PmcEtethm3d7YMaNfATfjdCzYQ6E=">
-          </div>
-          <div class="col-lg-2 d-none d-lg-block position-relative">
-            <div class="title-vertical d-flex justify-content-start">
-              <span>THRIFT FASHION</span>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-5 section-sm-t3">
-            <div class="title-box-d">
-              <h3 class="title-d">
-                Thrift <span class="color-d">Store</span>.com
-              </h3> 
-            <p class="color-text-a">
-              <em> TFStore: </em>The whole thing of clothes is insane. You can
-              spend a dollar on a jacket in a thrift store. And you can spend a
-              thousand dollars on a jacket in a shop. And if you saw those two
-              jackets walking down the street, you probably wouldn't know which
-              was which.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="col-md-12 position-relative"
-        data-aos="fade-left"
-        data-aos-duration="3000"
-      >
-        <div class="about-img-box">
-          <img data-aos="fade-left" data-aos-duration="3000" />
-        </div>
-        <div class="sinse-box">
-          <h3 class="sinse-title">
-            Thrift Fashion
-            <span></span>
-            <br />
-            Since 2022
-          </h3>
-          <p>Fashion</p>
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
-<!-- about us page ends here-->
+<!-- Product Section end -->
+
+<div class="product-json">
+
+</div>
 
 
+   
+    <!-- About Us Start Here -->
+    <div class="about-section" class="about">
+      <div class="inner-container">
+      <h1>About Us</h1>
+      <p class="text-about">
+        THE FASHION STORE caters to thoughtful shoppers who appreciate unique designs and top quality pieces you just can’t find anywhere else. We are constantly curating fresh new collections and looking for the next big thing our customers will love. Founded in Vienna in 2019, we are proud to be your Online Clothing Shop that you can rely on for our expert service and care.
+      
+      </p>
+      </div>
+          </div>
+      
+      
+    <!-- about us end here -->
+    
+  
+
+    <hr>
 
      <!-- contact page starts here -->
      
-     <div class="row justify-content-center">
+     <div class="row justify-content-center" id="contact">
       <div class="col-md-10">
         
 
         <div class="row justify-content-center">
           <div class="col-md-6">
             
-            <h3 class="heading mb-4">Let's talk about everything!</h3>
+            <h2 class="heading mb-4">For Futher Queries</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas debitis, fugit natus?</p>
 
             <p><img src="./assets/Imgs/character/2005.i105.015_isometric_online_shopping_set-09.webp" altImage" class="img-fluid"></p>
@@ -264,21 +340,21 @@
 
           </div>
           <div class="col-md-6">
-            
+            <h2 class="heading mb-4">FeedBack</h2>
             <form class="mb-5" method="post" id="contactForm" name="contactForm">
               <div class="row">
                 <div class="col-md-12 m-2 form-group">
-                  <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                  <input type="text" class="form-control" name="Email" id="Email" placeholder="Your name">
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-12 m-2  form-group">
-                  <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                  <input type="text" class="form-control" name="Addressl" id="Address" placeholder="Address">
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-12 m-2  form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                  <input type="text" class="form-control" name="subject" id="Contact No" placeholder="Subject">
                 </div>
               </div>
               <div class="row">
@@ -298,37 +374,68 @@
       </div>
     </div>
 
-  
-  
-
-
-
-
   <!-- contact page ends here -->
-
-
-  </div>
+</div>
+<marquee behavior="" direction="">
+  <script>
+    getcurre
+ GeolocationCoordinates
+  </script>
+</marquee>
+  <!-- footer start here -->
+  <footer>
+    <div class="container grid  top p-5">
+        <div class="row">
+            <div class=" col-4" style="text-align: justify;">
+                <h3 class="text-danger">About Us</h3>
+                <ul style="text-align: justify;">
+                  <li><a class="text-light" href="">Careers</a></li>
+                  <li><a class="text-light" href="">Our Stores</a></li>
+                  <li><a class="text-light" href="">Cares</li></li>
+                  <li><a class="text-light" href="">Terms & Conditions</li></li>
+                  <li><a class="text-light" href="">Privacy Policy</a></li>
+                </ul>
+              </div>
+        
+              <div class=" col-4">
+                <h3 class="text-danger" style="text-align: justifyr;">Customer Care</h3>
+                <ul style="text-align: justify;">
+                  <li><a class="text-light" href="">Help Center</a> </li>
+                  <li><a class="text-light" href="">How to Buy</a></li>
+                  <li><a class="text-light" href="">Track Your Order</a></li>
+                  <li><a class="text-light" href="">Corporate & Bulk Purchasing</a></li>
+                  <li><a class="text-light" href="">Returns & Refunds</a></li>
+                </ul>
+              </div>
+        
+              <div class=" col-4" style="text-align: justify;">
+                <h3 class="text-danger" >Contact Us</h3>
+                <ul style="text-align: justify;">
+                  <li><a class="text-light" href="">70 Washington Square South, New York, NY 10012, United States</a></li>
+                  <li><a class="text-light" href="">Email: dummy@gmail.com</a></li>
+                  <li><a class="text-light" href="">Phone: +1 1123 456 780</a></li>
+                </ul>
+                <div class="icon-flex">
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-youtube"></i>
+                  <i class="fab fa-google"></i>
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </div>
+        </div>
+    </div>
+  </footer>
+<!-- footer ends here -->
     <!-- Main Body Ends -->
-
-    <!-- Footer Starts -->
-    <!-- Footer Ends -->
-    <!-- Aos JS Link -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-
     <!-- Bootstrap JS Link start here-->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <!-- JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- owl carousel --> 
-    <script src = "./assets/owl_carousel/owl_carousel.js"></script>
-    <script src = "./assets/js/owl-carousel.js"></script>
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  
+
 
   </body>
 </html>
