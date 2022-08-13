@@ -20,8 +20,6 @@
     <link rel="stylesheet" href="./assets/CSS/hero.css" />
     <!-- About CSS Link -->
     <link rel="stylesheet" href="./assets/CSS/about.css">
-    <!-- Cart CSS Link -->
-    <link rel="stylesheet" href="./assets/CSS/cart.css">
     <!-- Product CSS link -->
     <link rel="stylesheet" href="./assets/CSS/product.css">
     <!-- Product.JSON -->
@@ -42,7 +40,18 @@
     <header class="header">
       <nav class="navbar navbar-expand-lg navbar-nav fixed-top animate_logo"  id="navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#" >TFS</a>
+          <a class="navbar-brand" href="#" ><img width="100px" style="margin-top: -20px;" src="./assets/Imgs/logo.png" alt=""></a>
+          <!-- Visitor Counter -->
+          <div id="CounterVisitor" class="text-white">
+  <span class="counter-item">0</span>
+  <span class="counter-item">0</span>
+  <span class="counter-item">1</span>
+  <span class="counter-item">1</span>
+  <span class="counter-item">8</span>
+  <span class="counter-item">4</span>
+</div>
+
+          <!-- Visitor Counter -->
           <button
             class="navbar-toggler"
             type="button"
@@ -60,7 +69,7 @@
             class="collapse navbar-collapse justify-content-between navbar_responsive"
             id="responsivetogglebutton"
           >
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 animation_nav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 animation_nav" style="margin-top: -20px;">
               <li class="nav-item">
                 <a class="nav-link " aria-current="page" href="#home">Home</a>
               </li>
@@ -76,10 +85,7 @@
             </ul>
 
             <ul class="navbar-nav ms-auto">
-              <!-- cart start here -->
-              
-    <!-- cart ends here -->
-              <div>
+              <div style="margin-top: -20px;">
                 <i class="fa-solid fa-magnifying-glass nav-icons"></i>
               </div>
               
@@ -166,12 +172,12 @@
             <form class="mb-5" method="post" id="contactForm" name="contactForm">
               <div class="row">
                 <div class="col-md-12 m-2 form-group">
-                  <input type="text" class="form-control" name="Email" id="Email" placeholder="Your name">
+                  <input type="text" class="form-control" name="Email" id="Email" placeholder="Name">
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-12 m-2  form-group">
-                  <input type="text" class="form-control" name="Addressl" id="Address" placeholder="Address">
+                  <input type="email" class="form-control" name="Addressl" id="Address" placeholder="Email">
                 </div>
               </div>
               <div class="row">
@@ -267,12 +273,21 @@
     <!-- Product JS Link -->
     <script src="./assets/js/myjson.js"></script>
     <script>
-      var myModal = document.getElementById('myModal')
-var myInput = document.getElementById('myInput')
+  var n = localStorage.getItem("on_load_counter");
 
-myModal.addEventListener('shown.bs.modal', function () {
-  myInput.focus()
-})
+  if (n === null) {
+    n = 0;
+  }
+  n++;
+
+  localStorage.setItem("on_load_counter", n);
+
+  nums = n.toString().split("").map(Number);
+  document.getElementById("CounterVisitor").innerHTML = "";
+  for (var i of nums) {
+    document.getElementById("CounterVisitor").innerHTML +=
+      '<span class="counter-item">' + i + "</span>";
+  }
     </script>
 
   </body>
