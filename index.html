@@ -20,39 +20,24 @@
     <link rel="stylesheet" href="./assets/CSS/hero.css" />
     <!-- About CSS Link -->
     <link rel="stylesheet" href="./assets/CSS/about.css">
+    <!-- Cart CSS Link -->
+    <link rel="stylesheet" href="./assets/CSS/cart.css">
     <!-- Product CSS link -->
     <link rel="stylesheet" href="./assets/CSS/product.css">
-    
-   
-    <!-- Product Slider CSS Link -->
-    <link rel="stylesheet" href="./assets/CSS/product-slider.css">
+    <!-- Product.JSON -->
+    <script src="./assets/js/product.js"></script>
 
     <!-- Contact us css link -->
     <link rel="stylesheet" href="./assets/CSS/contact.css">
-
-     <!-- Font Awesome 5.0 Link -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Font Awesome Kit JS Link -->
-    <script
-      src="https://kit.fontawesome.com/9e68e86282.js"
-      crossorigin="anonymous"
-    >
-    </script>
-  <!-- OwlCarouse css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-   <!-- jquery   -->
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-
-
     <!-- Footer CSS Link -->
     <link rel="stylesheet" href="./assets/CSS/footer.css">
-    	  <!-- OwlCarouse js -->
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-	  <!-- OwlCarouse js -->
+     <!-- Font Awesome 5.0 Link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   </head>
   <body>
+
+
     <!-- Navbar Starts -->
     <header class="header">
       <nav class="navbar navbar-expand-lg navbar-nav fixed-top animate_logo"  id="navbar">
@@ -80,7 +65,7 @@
                 <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#products"> Products </a>
+                <a class="nav-link" href="#product"> Products </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about">About Us</a>
@@ -94,9 +79,13 @@
             </ul>
 
             <ul class="navbar-nav ms-auto">
+              <!-- cart start here -->
+              
+    <!-- cart ends here -->
               <div>
                 <i class="fa-solid fa-magnifying-glass nav-icons"></i>
               </div>
+              
               <button
               type="button"
               class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse"
@@ -120,18 +109,17 @@
     </header>
     <!-- Navbar Ends -->
     
-   
+
     <!-- Main Body Starts -->
 
-    
             
     <!--Hero Starts -->
+
     <div class="container_hero" id="home">
         <div class="text-box">
-            <p>I'M</p>
+            <p>Welcome To </p>
             <h1>THRIFT FASHION</h1>
-            <h3>Start Shopping Here</h3>  <a href="#product">
-                <Button type="btn btn-primary">Go to Products</Button>  
+                <button class="btn btn-danger">Go to Products</button>  
             </a>
         </div>
       
@@ -139,178 +127,21 @@
     <!-- Hero Ends Here -->
 
   <!-- Products Section Start -->
-  <section class="section-products" id="product">
-    <div class="container">
-            <div class="row justify-content-center text-center">
-                    <div class="col-md-8 col-lg-6">
-                            <div class="header">
-                                    <h3>Featured Product</h3>
-                                    <h2>Popular Products</h2>
-                            </div>
-                    </div>
-            </div>
-            <div class="row">
-                    <!-- Single Product -->
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                            <div id="product-1" class="single-product">
-                                    <div class="part-1">
-                                            <ul>
-                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                                            </ul>
-                                    </div>
-                                    <div class="part-2">
-                                            <h3 class="product-title" id="productName">Here Product Title</h3>
-                                            <h4 class="product-old-price">$79.99</h4>
-                                            <h4 class="product-price">$49.99</h4>
-                                    </div>
-                            </div>
-                    </div>
-                    <!-- Single Product -->
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                            <div id="product-2" class="single-product">
-                                    <div class="part-1">
-                                            <span class="discount">15% off</span>
-                                            <ul>
-                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                                            </ul>
-                                    </div>
-                                    <div class="part-2">
-                                            <h3 class="product-title">Here Product Title</h3>
-                                            <h4 class="product-price">$49.99</h4>
-                                    </div>
-                            </div>
-                    </div>
-                    <!-- Single Product -->
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                            <div id="product-3" class="single-product">
-                                    <div class="part-1">
-                                            <ul>
-                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                                            </ul>
-                                    </div>
-                                    <div class="part-2">
-                                            <h3 class="product-title">Here Product Title</h3>
-                                            <h4 class="product-old-price">$79.99</h4>
-                                            <h4 class="product-price">$49.99</h4>
-                                    </div>
-                            </div>
-                    </div>
-                    <!-- Single Product -->
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                            <div id="product-4" class="single-product">
-                                    <div class="part-1">
-                                            <span class="new">new</span>
-                                            <ul>
-                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                                            </ul>
-                                    </div>
-                                    <div class="part-2">
-                                            <h3 class="product-title">Here Product Title</h3>
-                                            <h4 class="product-price">$49.99</h4>
-                                    </div>
-                            </div>
-                    </div>
-                    <!-- Single Product -->
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                            <div id="product-1" class="single-product">
-                                    <div class="part-1">
-                                            <ul>
-                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                                            </ul>
-                                    </div>
-                                    <div class="part-2">
-                                            <h3 class="product-title">Here Product Title</h3>
-                                            <h4 class="product-old-price">$79.99</h4>
-                                            <h4 class="product-price">$49.99</h4>
-                                    </div>
-                            </div>
-                    </div>
-                    <!-- Single Product -->
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                            <div id="product-2" class="single-product">
-                                    <div class="part-1">
-                                            <span class="discount">15% off</span>
-                                            <ul>
-                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                                            </ul>
-                                    </div>
-                                    <div class="part-2">
-                                            <h3 class="product-title">Here Product Title</h3>
-                                            <h4 class="product-price">$49.99</h4>
-                                    </div>
-                            </div>
-                    </div>
-                    <!-- Single Product -->
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                            <div id="product-3" class="single-product">
-                                    <div class="part-1">
-                                            <ul>
-                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                                            </ul>
-                                    </div>
-                                    <div class="part-2">
-                                            <h3 class="product-title">Here Product Title</h3>
-                                            <h4 class="product-old-price">$79.99</h4>
-                                            <h4 class="product-price">$49.99</h4>
-                                    </div>
-                            </div>
-                    </div>
-                    <!-- Single Product -->
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                            <div id="product-4" class="single-product">
-                                    <div class="part-1">
-                                            <span class="new">new</span>
-                                            <ul>
-                                                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                                                    <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                                            </ul>
-                                    </div>
-                                    <div class="part-2">
-                                            <h3 class="product-title">Here Product Title</h3>
-                                            <h4 class="product-price">$49.99</h4>
-                                    </div>
-                            </div>
-                    </div>
-            </div>
-    </div>
-</section>
-<!-- Product Section end -->
-
-<div class="product-json">
-
+<div id="product"class="text-center m-5">
+  <h1 >Featured Products</h1>
+    <button class="btn btn-danger m-3 view-product">View All Products</button>
+    <div id="product-json"></div>
+  <div class="product-button">
+  </div>
 </div>
+  <!-- Product Section End -->
 
-
-   
-    <!-- About Us Start Here -->
-    <div class="about-section" class="about">
+  <!-- About Us Start Here -->
+    <div class="about-section mt-5 " id="about" class="about">
       <div class="inner-container">
       <h1>About Us</h1>
       <p class="text-about">
-        THE FASHION STORE caters to thoughtful shoppers who appreciate unique designs and top quality pieces you just can’t find anywhere else. We are constantly curating fresh new collections and looking for the next big thing our customers will love. Founded in Vienna in 2019, we are proud to be your Online Clothing Shop that you can rely on for our expert service and care.
+        THE FASHION STORE caters to thoughtful shoppers who appreciate unique designs and top quality pieces you just cant find anywhere else. We are constantly curating fresh new collections and looking for the next big thing our customers will love. Founded in Vienna in 2019, we are proud to be your Online Clothing Shop that you can rely on for our expert service and care.
       
       </p>
       </div>
@@ -318,11 +149,12 @@
       
       
     <!-- about us end here -->
-    
-  
 
     <hr>
-
+    <div class="cart">
+  <button class="btn btn-success cart-btn">Hello</button>
+</div>
+    
      <!-- contact page starts here -->
      
      <div class="row justify-content-center" id="contact">
@@ -335,7 +167,7 @@
             <h2 class="heading mb-4">For Futher Queries</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas debitis, fugit natus?</p>
 
-            <p><img src="./assets/Imgs/character/2005.i105.015_isometric_online_shopping_set-09.webp" altImage" class="img-fluid"></p>
+            <p><img src="./assets/Imgs/character/2005.i105.015_isometric_online_shopping_set-09.webp" class="img-fluid"></p>
 
 
           </div>
@@ -434,8 +266,24 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"
   ></script>
-  
+      <!-- Font Awesome Kit JS Link -->
+    <script
+      src="https://kit.fontawesome.com/9e68e86282.js"
+      crossorigin="anonymous"
+    >
+    </script>
+   <!-- jquery   -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Product JS Link -->
+    <script src="./assets/js/myjson.js"></script>
+    <script>
+      var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
 
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
+    </script>
 
   </body>
 </html>

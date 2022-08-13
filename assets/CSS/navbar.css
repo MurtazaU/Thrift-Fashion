@@ -12,6 +12,7 @@ body {
   top: 0;
   left: 0;
 }
+
 a {
   text-decoration: none;
   font-weight: 500;
@@ -109,7 +110,7 @@ ul {
 }
 /* responsive styling */
 @media only screen and (max-width: 991px) {
-  .navbar_responsive{
+  .navbar_responsive {
     background: #2a3d45;
     padding: 0rem 2rem;
   }
